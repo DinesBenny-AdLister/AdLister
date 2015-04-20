@@ -1,5 +1,7 @@
 <?php
 
-echo 'Input.php';
+	class Input{
+		
+	}
 
 ?>
