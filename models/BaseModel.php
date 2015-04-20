@@ -98,16 +98,16 @@
     /*
      * Find a record based on an id
      */
-    public static function find($key, $value)
+    public static function search($key, $value)
     {
         // Get connection to the database
         self::dbConnect();
 
         // The following code will set the attributes on the calling object based on the result variable's contents
         $query = "SELECT * FROM " . static::$table . " WHERE $key = :$key";
-        
+
         $stmt = self::$dbc->prepare($query);
-        $stmt->bindValue(':key', $value, PDO::PARAM_STR);
+        $stmt->bindValue(":$key", $value, PDO::PARAM_STR);
         $stmt->execute();
 
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
