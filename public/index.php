@@ -8,7 +8,9 @@
 </head>
 <body>
 	<? require_once("../views/partials/header.php"); ?>
+    
     <div id="homepage">
+        
         <div id="img">
             <img src="/img/logo.png">
         </div>	
@@ -18,13 +20,23 @@
             <div id="login">
                 <a class="center" href="auth.login.php">Log In</a>
             </div>
-            <div id="createaccount">
-                <a class="center" href="users.create.php">Create Account</a>
-            </div>
+            
             <div id="preferences">
                 <a class="center" href="users.edit.php">Preferences</a>
             </div>
+            <br>
+
+            <div>
+                <img src="/img/Tagline.png">
+            </div>
         </div>
+        <div id="createaccountform">
+            <div id="createaccount">
+                <a class="center" href="users.create.php">Create Account</a>
+            </div>
+        </div>
+
+
     </div>
 
 	<? require_once("../views/partials/footer.php"); ?>

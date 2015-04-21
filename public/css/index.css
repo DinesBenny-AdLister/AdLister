@@ -1,22 +1,30 @@
 #links{
-    border: solid black 1px;
+    /*border: solid black 1px;*/
     width: 300px;
     float: left;
 }
 
 #img{
-    border: solid black 1px;
+    /*border: solid black 1px;*/
     width: 350px;
     float: left;
 }
 
 
 #homepage{
-    border: solid black 1px;
-    vertical-align: center;
-    width: 700px;
-    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    width: 60%;
+    height: 300px;
+    /*border: solid black 1px;*/
+}
 
+#createaccountform{
+    width: 300px;
+    float: left;
 }
 
 /*#container{
