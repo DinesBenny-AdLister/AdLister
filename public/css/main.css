@@ -1,5 +1,5 @@
 body{
-	background-image:url("/img/cream_dust.png");
+	background-image:url("../img/debut_light.png");
 	font-family: 'PT Sans', sans-serif;
 }
 
@@ -9,6 +9,7 @@ body{
 	border: 2px solid black;
 	margin-left: 20%;	
 	border-bottom: 0px;
+	background: white;
 }
 
 #container{
@@ -16,6 +17,7 @@ body{
 	height: 100%;
 	border: solid black 2px;
 	margin-left: 20%;
+	background: white;
 }
 
 #sidebar{
@@ -48,6 +50,7 @@ body{
 	border: 2px solid black;
 	margin-left: 20%;
 	border-top: 0px;
+	background: white;
 }
 
 .QLRow{
