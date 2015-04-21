@@ -1,0 +1,43 @@
+body{
+    background-image:url("/img/cream_dust.png");
+}
+
+#header{
+    width: 60%;
+    height: 100%;
+    border: 2px solid black;
+    margin-left: 20%;   
+    border-bottom: 0px;
+}
+
+.center{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.center:link{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px dotted;
+}
+
+.center:visited{
+    color:grey;
+}
+
+#container{
+    width: 60%;
+    height: 100%;
+    border: solid black 2px;
+    margin-left: 20%;
+}
+
+#footer{
+    width: 60%;
+    height: 100%;
+    border: 2px solid black;
+    margin-left: 20%;
+    border-top: 0px;
+}
