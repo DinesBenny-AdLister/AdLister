@@ -7,7 +7,9 @@
 <body>
 	<? require_once("../views/partials/header.php"); ?>
 	<div id="container">
-		<? require_once("../views/partials/sidebar.php");  ?>
+		
+
+        <div></div>
 
 		<div id="content">
 
