@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<? require_once("../views/partials/htmlHeader.php") ?>
+
 </head>
 <body>
 	<? require_once("../views/partials/header.php"); ?>

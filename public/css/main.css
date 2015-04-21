@@ -1,5 +1,6 @@
 body{
 	background-image:url("/img/cream_dust.png");
+	font-family: 'PT Sans', sans-serif;
 }
 
 #header{
@@ -21,8 +22,20 @@ body{
 	width: 20%;
 	height: 100%;
 	border-right: 2px solid black;
-
+	padding-left: .5%;
 }
+
+#sidebarSearch{
+	width: 90%;
+}
+
+#sidebarMap{
+	width: 98%;
+	height: 10%;
+	border: solid black 1px;
+}
+
+#quickLinks
 
 #content{
 	width: 40%;
@@ -35,4 +48,22 @@ body{
 	border: 2px solid black;
 	margin-left: 20%;
 	border-top: 0px;
+}
+
+.QLRow{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.QL{
+	border: 1px solid black;
+	background: #6b4377;
+	padding: 1px;
+	color: white;
+	text-decoration: none;
+}
+
+.QL:visited{
+	color:white;
+	text-decoration: none;
 }
