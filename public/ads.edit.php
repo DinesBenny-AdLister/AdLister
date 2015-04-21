@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ad Edit</title>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-    <div id="header"> <? require_once("../views/partials/header.php"); ?> </div>
-    <div id="container">
-        <div id="sidebar"> <? require_once("../views/partials/sidebar.php");  ?> </div>
+	<? require_once("../views/partials/header.php"); ?>
+	<div id="container">
+		<? require_once("../views/partials/sidebar.php");  ?>
 
-        <div id="content"></div>
+		<div id="content">
 
-    </div>
-    <div id="footer"> <? require_once("../views/partials/footer.php"); ?> </div>
+		</div>
+	</div>
+	<? require_once("../views/partials/footer.php"); ?>
 </body>
 </html>

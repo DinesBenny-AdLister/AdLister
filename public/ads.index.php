@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ads Index</title>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-    <div id="header"><?php require_once("../views/partials/header.php"); ?></div>
-    
-    <div id="container">
-        <div id="sidebar"><?php require_once("../views/partials.sidebar.php"); ?></div>
-        
-        <div id="content"></div>
-    </div>
-    
-    <div id="footer"><?php require_once("../views/partials/footer.php"); ?></div>
+	<? require_once("../views/partials/header.php"); ?>
+	<div id="container">
+		<? require_once("../views/partials/sidebar.php");  ?>
 
+		<div id="content">
 
+		</div>
+	</div>
+	<? require_once("../views/partials/footer.php"); ?>
 </body>
 </html>
