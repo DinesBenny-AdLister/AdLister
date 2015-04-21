@@ -2,16 +2,17 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-	<div id="header"> <? require_once("../views/partials/header.php"); ?> </div>
+	<? require_once("../views/partials/header.php"); ?>
 	<div id="container">
-		<div id="sidebar"> <? require_once("../views/partials/sidebar.php");  ?> </div>
+		<? require_once("../views/partials/sidebar.php");  ?>
 
 		<div id="content">
 
 		</div>
 	</div>
-	<div id="footer"> <? require_once("../views/partials/footer.php"); ?> </div>
+	<? require_once("../views/partials/footer.php"); ?>
 </body>
 </html>
