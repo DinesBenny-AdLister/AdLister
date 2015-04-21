@@ -27,17 +27,25 @@ body{
 	padding-left: .5%;
 }
 
+#sidebar * {
+	margin-bottom: 1%;
+}
+
 #sidebarSearch{
 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;	
 }
 
 #sidebarMap{
-	width: 98%;
-	height: 10%;
+	/*width: 98%;*/
+	/*height: 10%;*/
+	width: 150px;
+	height: 150px;
 	border: solid black 1px;
+	margin-left: 4%;
 }
 
-#quickLinks
 
 #content{
 	width: 40%;

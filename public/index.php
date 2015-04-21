@@ -27,5 +27,6 @@
 		</div>
 	</div>
 	<? require_once("../views/partials/footer.php"); ?>
+    <? require_once("../views/partials/jscriptFooter.php"); ?>
 </body>
 </html>

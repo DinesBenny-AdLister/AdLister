@@ -13,9 +13,7 @@
 		<input type="text" name="sidebarSearch" id="sidebarSearch" placeholder="Reputable Coding Schools">
 		<button id="sidebarSearchSubmit">Search</button>
 	</form>
-	<div id="sidebarMap">
-		<img id="sidebarMap" src="../img/MalePeacockSpider.jpg">
-	</div>
+	<div id="sidebarMap"></div>
 	<div id="sidebarLinks">
 		<div id="aboutLink"><a href="">About CragsLast</a></div>
 		<div id="helpFAQLink"><a href="">Help, FAQ, Abuse, Legal</a></div>
