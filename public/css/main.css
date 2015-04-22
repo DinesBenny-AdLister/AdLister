@@ -3,78 +3,143 @@ body{
 	font-family: 'PT Sans', sans-serif;
 }
 
-#header{
-	width: 60%;
-	height: 100%;
-	border: 2px solid black;
-	margin-left: 20%;	
-	border-bottom: 0px;
-	background: white;
-}
+/*Header*/
+	#header{
+		width: 60%;
+		height: 90px;
+		border: 2px solid black;
+		margin-left: 20%;	
+		border-bottom: 0px;
+		background: white;
+		padding: .5%;
+	}
 
-#container{
-	width: 60%;
-	height: 100%;
-	border: solid black 2px;
-	margin-left: 20%;
-	background: white;
-}
+	#header * {
+		
+	}
 
-#sidebar{
-	width: 20%;
-	height: 100%;
-	border-right: 2px solid black;
-	padding-left: .5%;
-}
+	#logoBox{
+		margin-right: 230px;
+		margin-left: 20px;
+		float: left;
+	}
 
-#sidebar * {
-	margin-bottom: 1%;
-}
+	#logo{
+		width: 75px;
+		height: 75px;
+	}
 
-#sidebarSearch{
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;	
-}
+	#tagline{
+		width: 75px;
+		height: 15px;
+	}
 
-#sidebarMap{
-	/*width: 98%;*/
-	/*height: 10%;*/
-	width: 150px;
-	height: 150px;
-	border: solid black 1px;
-	margin-left: 4%;
-}
+	#location{
+		float: left;
+		margin-right: 150px;
+		margin-top: 20px;
+		font-size: 30px;
+	}
 
+	#userUtil{
+		float: left ;
+	}
 
-#content{
-	width: 40%;
-	height: 100%;
-}
+/*Container*/
+	#container{
+		width: 60%;
+		height: 100%;
+		border: solid black 2px;
+		margin-left: 20%;
+		background: white;
+		border-bottom: solid black 4px;
+	}
 
-#footer{
-	width: 60%;
-	height: 100%;
-	border: 2px solid black;
-	margin-left: 20%;
-	border-top: 0px;
-	background: white;
-}
+/*Sidebar */
+	#sidebar{
+		width: 20%;
+		height: 100%;
+		border-right: 2px solid black;
+		padding-left: .5%;
+		font-size: 20px;
+	}
 
-.QLRow{
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
+	#sidebar * {
+		margin-bottom: 1%;
+	}
 
-.QL{
-	border: 1px solid black;
-	background: #6b4377;
-	padding: 1px;
-	color: white;
-	text-decoration: none;
-}
+	#sidebarSearch{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 
-.QL:visited{
-	color:white;
-	text-decoration: none;
-}
+	#sidebarMap{
+		/*width: 98%;*/
+		/*height: 10%;*/
+		width: 150px;
+		height: 150px;
+		border: solid black 1px;
+		margin-left: 4%;
+	}
+	.QLRow{
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.QL{
+		border: 1px solid black;
+		background: #6b4377;
+		padding: 1px;
+		color: white;
+		text-decoration: none;
+	}
+
+	.QL:visited{
+		color:white;
+		text-decoration: none;
+	}
+
+/*Content*/
+	#content{
+		width: 40%;
+		height: 100%;
+	}
+
+/*Footer*/
+	#footer{
+		/*width: 60%;*/
+		height: 100%;
+		/*border: 2px solid black;*/
+		margin-left: 20%;
+		border-top: 0px;
+		background: white;
+		color: gray;
+		font-size: 10px;
+	}
+
+	#contactCW{
+		float: left;
+		width: 120px;
+		margin-left: 7px;
+	}
+
+	#emailContact{
+		margin-left: 3px;
+	}
+
+	#copywrite{
+		margin-left: 20px;	
+	}
+
+	#disclaimer{
+		margin-top: 10px;
+		margin-left: 30px;
+		float: left;
+	}
+
+	#notice{
+		margin-left: 20px;
+		margin-top: 10px;
+		float: left;
+	}
