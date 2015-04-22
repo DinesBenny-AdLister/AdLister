@@ -1,5 +1,3 @@
-
-
 <div id="header">
 	<div id="logoBox">
 		<img id="logo" src="img/Logo.png">
