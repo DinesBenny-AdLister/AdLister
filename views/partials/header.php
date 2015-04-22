@@ -1,8 +1,8 @@
 <div id="header">
 	<div id="logoBox">
-		<img id="logo" src="img/Logo.png">
+		<img id="headerLogo" src="img/Logo.png">
 		<br>
-		<img id="tagline" src="img/Tagline.png">
+		<img id="headerTagline" src="img/Tagline.png">
 	</div>
 
 	<div id="location">

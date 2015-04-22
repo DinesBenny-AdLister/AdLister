@@ -19,36 +19,37 @@ body{
 	}
 
 	#logoBox{
-		margin-right: 230px;
+		margin-right: 200px;
 		margin-left: 20px;
 		float: left;
 	}
 
-	#logo{
+	#headerLogo{
 		width: 75px;
 		height: 75px;
 	}
 
-	#tagline{
+	#headerTagline{
 		width: 75px;
 		height: 15px;
 	}
 
 	#location{
 		float: left;
-		margin-right: 150px;
+		margin-right: 80px;
 		margin-top: 20px;
-		font-size: 30px;
+		font-size: 50px;
 	}
 
 	#userUtil{
+		margin-top: 15px;
 		float: left ;
 	}
 
 /*Container*/
 	#container{
-		width: 60%;
-		height: 100%;
+		width: 868px;
+		height: 578px;
 		border: solid black 2px;
 		margin-left: 20%;
 		background: white;
@@ -62,6 +63,9 @@ body{
 		border-right: 2px solid black;
 		padding-left: .5%;
 		font-size: 20px;
+		float: left;
+		margin-left: -35%;
+		/*margin-left: -331px;*/
 	}
 
 	#sidebar * {
@@ -104,14 +108,20 @@ body{
 	#content{
 		width: 40%;
 		height: 100%;
+		float: left;
+	}
+
+	#content * {
+		margin-left: 40%;
 	}
 
 /*Footer*/
 	#footer{
 		/*width: 60%;*/
-		height: 100%;
+		/*height: 100%;*/
 		/*border: 2px solid black;*/
 		margin-left: 20%;
+		width: 868px;
 		border-top: 0px;
 		background: white;
 		color: gray;
