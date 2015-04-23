@@ -1,10 +1,9 @@
 #links{
     padding-top: 15px;
-    /*border: solid black 1px;*/
     width: 330px;
     float: left;
-    /*vertical-align: center;*/
     padding-left: 60px;
+    /*border: solid black 1px;*/
 }
 
 #createaccount{
@@ -14,9 +13,9 @@
 }
 
 #imgs{
-    /*border: solid black 1px;*/
     width: 420px;
     float: left;
+    /*border: solid black 1px;*/
 }
 
 #homepage{
@@ -33,8 +32,9 @@
 #createaccountsection{
     width: 215px;
     float: left;
+    margin-top: -15px;
+    padding-bottom: 30px;
     /*border: solid black 1px;*/
-
 }
 
 .center:link{
@@ -52,7 +52,12 @@
 #footer{
     border-style: none;
     float: left;
+    padding-top: 10px;
+    background-color: transparent;
+    /*border: solid black 1px;*/
+
 }
+
 
 /*#container{
     width: 60%;
