@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>CragsLast</title>
 	<? require_once("../views/partials/htmlHeader.php") ?>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
 
