@@ -106,7 +106,7 @@ body{
 
 /*Content*/
 	#content{
-		width: 40%;
+		width: 76%;
 		height: 100%;
 		float: left;
 	}
@@ -167,6 +167,7 @@ body{
 		font-size: 25px;
 		padding-top: 30px;
 		margin-top: 30px;
+		margin-left: 16%;
 	}
 
 
