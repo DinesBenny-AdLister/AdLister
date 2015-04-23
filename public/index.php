@@ -20,8 +20,6 @@
                 <img src="/img/Tagline.png">
             </div>
         </div>
-        
-        
 
         <div id="links">
             <div id="login">
@@ -66,7 +64,6 @@
                     
                     </fieldset>
                 </form>
-
             </div>
         </div>
     </div>

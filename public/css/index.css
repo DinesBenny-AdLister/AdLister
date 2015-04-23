@@ -9,7 +9,6 @@
 #createaccount{
     font-size: 30px;
     color: black;
-
 }
 
 #imgs{
@@ -55,13 +54,43 @@
     padding-top: 10px;
     background-color: transparent;
     /*border: solid black 1px;*/
+}
 
+#editaccountsection{
+    width: 100%;
+    /*float: left;*/
+    margin-left: 0px;
+    /*padding-bottom: 30px;*/
+    /*border: solid black 1px;*/
+    font-size: 19px;
+}
+
+#editaccount{
+    margin-top: 20px;
+    margin-left: 110px;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#leftColumn{
+    float:left;
+}
+
+#content * {
+    margin-left: 1%;
+}
+
+#rightColumn{
+    float:right;
+    margin-right: 2%;
+}
+
+#submitbutton{
+    margin-left: 40px;
 }
 
 
-/*#container{
-    width: 60%;
-    height: 100%;
-    border: solid black 2px;
-    margin-left: 20%;
-}*/
+
+
+
+
