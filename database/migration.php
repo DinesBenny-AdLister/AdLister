@@ -17,10 +17,9 @@ $query =
     username VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL,
     password VARCHAR(50) NOT NULL,
-    phoneNumber VARCHAR(13),
-    userpic VARCHAR(50),
-    UNIQUE KEY username,
-    UNIQUE KEY email,
+    phone_number VARCHAR(13),
+    user_pic VARCHAR(50),
+    UNIQUE KEY (username, email),
     PRIMARY KEY (id)
 )";
 $dbc->exec($query);
@@ -32,7 +31,7 @@ $query =
     item VARCHAR(100) NOT NULL,
     section VARCHAR(50) NOT NULL,
     price VARCHAR(6) NOT NULL,
-    itemPic VARCHAR(50),
+    item_pic VARCHAR(50),
     description VARCHAR(200) NOT NULL,
     user VARCHAR(50) NOT NULL,
     
@@ -48,10 +47,10 @@ $query =
 "CREATE TABLE tags (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     tag VARCHAR(50) NOT NULL,
-    itemId INT NOT NULL,
+    item_id INT UNSIGNED NOT NULL,
 
-    FOREIGN KEY (itemId)
-    REFERENCES ads (item),
+    FOREIGN KEY (item_id)
+    REFERENCES ads (id),
 
     PRIMARY KEY (id)
 )";
