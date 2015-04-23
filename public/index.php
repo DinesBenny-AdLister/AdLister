@@ -1,3 +1,11 @@
+<? 
+    session_start();
+    $sID = session_id();
+
+    if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]){
+        header("Location: ads.index.php");
+    }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,6 +68,28 @@
                 </form>
 
             </div>
+        </div>
+    </div>
+
+    <div id="loginModal">
+        <div id="modalBackground">
+            <div id="modalForm">
+                <form method="Post">
+                    <label for="modalUsername">Username/Email</label>
+                    <br>
+                    <input type="text" id="modalUsername" name="modalUsername">
+                    <br>
+
+                    <label for="modalPassword">Password</label>
+                    <br>
+                    <input type="password" id="modalPassword" name="modalPassword">
+                    <br>
+
+                    <button type="submit" id="submitButton">Submit</button>
+                </form>
+                <a id="closeModal" href="">X</a>
+            </div>
+
         </div>
     </div>
 
