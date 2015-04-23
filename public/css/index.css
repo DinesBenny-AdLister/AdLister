@@ -1,23 +1,21 @@
 
 #links{
     padding-top: 15px;
-    /*border: solid black 1px;*/
     width: 330px;
     float: left;
-    /*vertical-align: center;*/
     padding-left: 60px;
+    /*border: solid black 1px;*/
 }
 
 #createaccount{
     font-size: 30px;
     color: black;
-
 }
 
 #imgs{
-    /*border: solid black 1px;*/
     width: 420px;
     float: left;
+    /*border: solid black 1px;*/
 }
 
 #homepage{
@@ -34,8 +32,9 @@
 #createaccountsection{
     width: 215px;
     float: left;
+    margin-top: -15px;
+    padding-bottom: 30px;
     /*border: solid black 1px;*/
-
 }
 
 .center:link{
@@ -53,6 +52,25 @@
 #footer{
     border-style: none;
     float: left;
+    padding-top: 10px;
+    background-color: transparent;
+    /*border: solid black 1px;*/
+}
+
+#editaccountsection{
+    width: 100%;
+    /*float: left;*/
+    margin-left: 0px;
+    /*padding-bottom: 30px;*/
+    /*border: solid black 1px;*/
+    font-size: 19px;
+}
+
+#editaccount{
+    margin-top: 20px;
+    margin-left: 110px;
+    font-size: 30px;
+    padding-left: 20px;
 }
 
 /*Login Modal*/
@@ -119,4 +137,20 @@
 * {
     position: relative;
     z-index: 0;
+}
+#leftColumn{
+    float:left;
+}
+
+#content * {
+    margin-left: 1%;
+}
+
+#rightColumn{
+    float:right;
+    margin-right: 2%;
+}
+
+#submitbutton{
+    margin-left: 40px;
 }

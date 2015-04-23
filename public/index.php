@@ -28,8 +28,6 @@
                 <img src="/img/Tagline.png">
             </div>
         </div>
-        
-        
 
         <div id="links">
             <div id="login">
@@ -51,6 +49,9 @@
                     <fieldset>
                         <legend></legend>
 
+                            <label for="username">Username</label>
+                            <input id="username" type="text" placeholder="Username">
+
                             <label for="email">Email</label>
                             <input id="email" type="email" placeholder="Email">
 
@@ -60,13 +61,17 @@
                             <label for="confirmpassword">Confirm Password</label>
                             <input id="confirmpassword" type="password" placeholder="Confirm Password">
 
-                                <label for="remember" class="pure-checkbox">
-                                    <input id="remember" type="checkbox"> Remember me
-                                </label>
-                                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                            <label for="phonenumber">Phone Number</label>
+                            <input id="phonenumber" type="text" placeholder="Phone Number">
+
+                            <label for="remember" class="pure-checkbox">
+                                <input id="remember" type="checkbox"> Remember me
+                            </label>
+                            
+                            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                    
                     </fieldset>
                 </form>
-
             </div>
         </div>
     </div>
