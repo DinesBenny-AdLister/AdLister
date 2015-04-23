@@ -112,7 +112,7 @@ body{
 	}
 
 	#content * {
-		margin-left: 40%;
+		margin-left: 10%;
 	}
 
 /*Footer*/
@@ -153,3 +153,31 @@ body{
 		margin-top: 10px;
 		float: left;
 	}
+
+/*Ad Create Form*/	
+	#adForm{
+		margin-left: 0px;
+	}
+
+	#adForm{
+		width: 400px;
+		float: left;
+		/*border: 1px solid;*/
+		padding-left: 0px;
+		font-size: 25px;
+		padding-top: 30px;
+		margin-top: 30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,11 +3,6 @@
 <head>
 	<title></title>
 	<? require_once("../views/partials/htmlHeader.php") ?>
-	<style type="text/css">
-		#adForm{
-			margin-left: 0px;
-		}
-	</style>
 </head>
 <body>
 	<? require_once("../views/partials/header.php"); ?>
@@ -26,28 +21,47 @@
             // picture - not required
             // description  -->
 
-             <form id="adForm" class="pure-form pure-form-stacked">
+            <!-- class="pure-form pure-form-stacked" -->
+            <form id="adForm"> 
 	                <fieldset>
-	                    <legend>A Stacked Form</legend>
+	                    <br>
+                        <legend>Create Your Ad</legend>
 
-	                    <label for="email">Email</label>
-	                    <input id="email" type="email" placeholder="Email">
-
-	                    <label for="password">Password</label>
-	                    <input id="password" type="password" placeholder="Password">
-
-	                        <label for="contacttype">Contact Type</label>
-	                        <select id="contact">
-	                            <option>email</option>
-	                            <option>phone</option>
-	                            
+	                    <label for="itemLocation">Location:</label>
+	                    <input id="itemLocation" type="text" placeholder="ZIP code">
+                        <br>
+                        <br>
+	                    <!-- <label for="category">Category</label>
+	                    <input id="category" type="text" placeholder="Category"> -->
+                        <label for="section">Section:</label>
+                            <select id="section">
+                                <option>Bikes</option>
+                                <option>Furniture</option>
+                                <option>Electronics</option>
+                                <option>Clothes</option>
+                                <option>Jobs</option>
+                                <option>Cars</option>
+                            </select>
+                            <br>
+                            <br>
+	                        <label for="contacttype">Contact Type:</label>
+                            <select id="contact">
+	                            <option>text msg</option>
+                                <option>email</option>
+	                            <option>call</option>
 	                        </select>
+                            <br>
+                            <br>
 
-	                        <label for="remember" class="pure-checkbox">
+	                        <!-- <label for="remember" class="pure-checkbox">
 	                            <input id="remember" type="checkbox"> Remember me
-	                        </label>
+	                        </label> -->
 
-	                    <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                            <input type="file" name="pic" accept="image/*">
+
+                        <br>
+                        <br>    
+	                    <button type="submit" class="pure-button pure-button-primary">Post</button>
 	                </fieldset>
 	            </form>
 		</div>
