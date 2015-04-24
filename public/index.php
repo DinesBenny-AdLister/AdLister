@@ -1,4 +1,4 @@
-<? 
+<?
     session_start();
     $sID = session_id();
 
@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    
+
     <div id="homepage">
         <div id="imgs">
             <div id="logo">
@@ -35,13 +35,13 @@
             </div>
             <div id="preferences">
                 <a class="center" href="users.edit.php">Preferences</a>
-            </div>   
+            </div>
         </div>
 
         <div id="createaccountsection">
-            
+
             <div id="createaccount">
-                Create Account                
+                Create Account
             </div>
 
             <div id="createaccountform">
@@ -67,9 +67,9 @@
                             <label for="remember" class="pure-checkbox">
                                 <input id="remember" type="checkbox"> Remember me
                             </label>
-                            
+
                             <button type="submit" class="pure-button pure-button-primary">Sign in</button>
-                    
+
                     </fieldset>
                 </form>
             </div>
