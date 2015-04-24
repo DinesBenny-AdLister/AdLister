@@ -10,14 +10,14 @@
 
 			$userInfo = User::search('username', $username);
 
-			if (isset($userInfo->'password') && $userInfo->'password' == $password){
+			if (isset($userInfo->password) && $userInfo->password == $password){
 				$log::loginAttempt("$username succussfully logged in");
 				header("Location: ads.index.php");
 				exit;
 			}
 			else{
 				$log::loginAttempt("$username log in failed");
-				return = false;
+				return false;
 			}
 		}
 

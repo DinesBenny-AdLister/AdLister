@@ -30,7 +30,7 @@
 
             self::$dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            echo self::$dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
+            // echo self::$dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
         }
     }
 
@@ -63,7 +63,7 @@
         if (!empty($this->attributes)){
         	self::dbConnect();
         	$stmt = self::$dbc->prepare("SELECT * FROM " . static::$table . " WHERE id = :id");
-        	
+
         	$stmt->bindValue(":id", $this->attributes["id"], PDO::PARAM_STR);
 
         	$stmt->execute();
@@ -134,7 +134,8 @@
 
 
     // Delete a row in the table based on a passed ID.
-    public static function delete($id){
+    public static function delete($id)
+    {
     	self::dbConnect();
 
     	$stmt = self::$dbc->prepare("DELETE * FROM " . static::$table . " WHERE id = :id");
@@ -143,4 +144,6 @@
 
     	$stmt->execute();
     }
- ?>
+
+}
+?>
