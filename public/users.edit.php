@@ -15,15 +15,15 @@
 
 			<div id="content">
 				<div id="editaccountsection">
-	            
+
 	            <div id="editaccount">
-	                Edit Account                
+	                Edit Account
 	            </div>
 
 	            <div id="editaccountform">
 	                <form class="pure-form pure-form-stacked">
 	                    <fieldset>
-	                                                	
+
 	                        	<div id="leftColumn">
 		                            <label for="username">Username</label>
 		                            <input id="username" type="text" placeholder="Username">
@@ -43,21 +43,16 @@
 	                        	</div>
 
 	                            <div id="rightColumn">
-	                          
 	                            	<!-- picture -->
-	                            	<img id="pic" src="crag.jpg" height="202" width="202">
+	                            	<img id="pic" src="/img/crag.jpg" height="202" width="202">
 	                            	<input id="picInput" type="file" name="pic" accept="image/*">
 
 	                            	<!-- textarea -->
 	                            	<label for="about">About</label>
 	                            	<textarea id="about" name="about" rows="2" cols="30"></textarea>
-	                            
 	                            </div>
 
-	                            
 
-
-	                            
 	                            <button id="submitbutton" type="submit" class="pure-button pure-button-primary">Update!</button>	                    
 	                    </fieldset>
 	                </form>

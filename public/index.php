@@ -1,11 +1,19 @@
-<? 
+<?
+
+require_once '../bootstrap.php';
+
     session_start();
     $sID = session_id();
 
     if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]){
         header("Location: ads.index.php");
     }
+
+    var_dump($_POST);
+    if(!empty($_POST)){
+    }
  ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +25,7 @@
 
 </head>
 <body>
-    
+
     <div id="homepage">
         <div id="imgs">
             <div id="logo">
@@ -35,48 +43,47 @@
             </div>
             <div id="preferences">
                 <a class="center" href="users.edit.php">Preferences</a>
-            </div>   
+            </div>
         </div>
 
         <div id="createaccountsection">
-            
+
             <div id="createaccount">
-                Create Account                
+                Create Account
             </div>
 
             <div id="createaccountform">
-                <form class="pure-form pure-form-stacked">
+                <form class="pure-form pure-form-stacked" action="index.php" method="post">
                     <fieldset>
                         <legend></legend>
 
                             <label for="username">Username</label>
-                            <input id="username" type="text" placeholder="Username">
+                            <input name="username" id="username" type="text" placeholder="Username">
 
                             <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="Email">
+                            <input name="email" id="email" type="email" placeholder="Email">
 
                             <label for="password">Password</label>
-                            <input id="password" type="password" placeholder="Password">
+                            <input name="password" id="password" type="password" placeholder="Password">
 
                             <label for="confirmpassword">Confirm Password</label>
-                            <input id="confirmpassword" type="password" placeholder="Confirm Password">
+                            <input name="confirmpassword" id="confirmpassword" type="password" placeholder="Confirm Password">
 
                             <label for="phonenumber">Phone Number</label>
-                            <input id="phonenumber" type="text" placeholder="Phone Number">
+                            <input name="phonenumber" id="phonenumber" type="text" placeholder="Phone Number">
 
                             <label for="remember" class="pure-checkbox">
-                                <input id="remember" type="checkbox"> Remember me
+                                <input name="remember" id="remember" type="checkbox"> Remember me
                             </label>
-                            
+
                             <button type="submit" class="pure-button pure-button-primary">Sign in</button>
-                    
                     </fieldset>
                 </form>
             </div>
         </div>
     </div>
 
-    <div id="loginModal">
+    <!-- <div id="loginModal">
         <div id="modalBackground">
             <div id="modalForm">
                 <form method="Post">
@@ -96,7 +103,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
 	<? require_once("../views/partials/footer.php"); ?>
     <? require_once("../views/partials/jscriptFooter.php"); ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Create Ad</title>
 	<? require_once("../views/partials/htmlHeader.php") ?>
 </head>
 <body>
@@ -60,7 +60,7 @@
                             <input type="file" name="pic" accept="image/*">
 
                         <br>
-                        <br>    
+                        <br>
 	                    <button type="submit" class="pure-button pure-button-primary">Post</button>
 	                </fieldset>
 	            </form>

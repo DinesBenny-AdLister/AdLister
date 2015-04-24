@@ -6,8 +6,9 @@
 
 <div id="sidebar">
 	<div id="logoSidebar">CragsLast</div>
-	<div id="postAdLink"><a href="">Post Ad</a></div>
-	<div id="viewAccountLink"><a href="">View Account</a></div>
+	<div id="postAdLink"><a href="ads.create.php">Post Ad</a></div>
+	<!-- <div id="editAdLink"><a href="">Edit Ad</a></div> -->
+	<div id="viewAccountLink"><a href="users.show.php">View Account</a></div>
 	<form>
 		<label for="sidebarSearch"></label>
 		<input type="text" name="sidebarSearch" id="sidebarSearch" placeholder="Reputable Coding Schools">

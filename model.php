@@ -2,7 +2,7 @@
 
 require_once 'parks_login.php';
 
-Class Model 
+Class Model
 
 {
 
@@ -44,7 +44,7 @@ Class Model
     {
         // @TODO: Return the value from attributes with a matching $name, if it exists
         if(array_key_exists($name, $this->attributes)) {
-            
+
             return $this->attributes[$name];
         }
 
@@ -65,7 +65,7 @@ Class Model
     /*
      * Persist the object to the database
      */
-    
+
     public function save()
     {
 
@@ -90,7 +90,7 @@ Class Model
 
         // @TODO: Use prepared statements to ensure data security
 
-    
+
     }
 
     public function insert()
@@ -106,7 +106,7 @@ Class Model
             $insert->bindValue(":username", $this->username, PDO::PARAM_STR);
             $insert->bindValue(":email", $this->email, PDO::PARAM_STR);
             $insert->bindValue(":password", $this->password, PDO::PARAM_STR);
-         
+
             // If inserting new id, add the id to the attributes array so the object can properly reflect the id as well
             // $this->id = self::$dbc->lastInsertId();
 
