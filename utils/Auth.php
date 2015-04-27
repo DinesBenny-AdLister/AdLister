@@ -3,7 +3,7 @@
 	require_once("Logger.php");
 
 	class Auth{
-		public static function logUser($username){
+		public static function logUser($username, $password){
 			$log = new Logger();
 
 			$log::info("$username attempted to log in");
