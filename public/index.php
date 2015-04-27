@@ -3,16 +3,17 @@ require_once '../bootstrap.php';
 if(isset($_POST['modalUsername'])){
     if(isset($_POST['modalPassword'])){
         require_once("../utils/Auth.php");
-        if(!Auth::logUser($_POST['modalUsername'], $_POST['modalPassword'])){
-            // PRINT INVALID 'USERNAME'/'PASSWORD'
+        $login = Auth::logUser($_POST['modalUsername'], $_POST['modalPassword']);
+        if($login){
+            $invalid = true;
         }
     }
     else{
-        // PRINT NEED 'PASSWORD' TO LOGIN
+        $invalid = true;
     }
 }
 elseif(isset($_POST['modalPassword'])){
-    // PRINT NEED 'USERNAME' TO LOGIN
+    $invalid = true;
 }
     
     session_start();
@@ -22,7 +23,10 @@ elseif(isset($_POST['modalPassword'])){
         header("Location: ads.index.php");
     }
 
-    extract($_GET);
+    if(!isset($invalid)){
+        $invalid = false;
+    }
+    extract([$_GET, $invalid]);
  ?>
 
 <!DOCTYPE html>
@@ -109,6 +113,11 @@ elseif(isset($_POST['modalPassword'])){
                     <br>
 
                     <button type="submit" id="submitButton">Submit</button>
+                    <br>
+                    <br>
+                    <? if($invalid): ?>
+                        <p class="error">Invalid Username/Password.</p>
+                    <? endif; ?>
                 </form>
                 <a id="closeModal" href="/">X</a>
             </div>

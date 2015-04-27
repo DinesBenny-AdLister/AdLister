@@ -127,6 +127,10 @@
     #closeModal:hover{
         opacity: 1;
     }
+
+    .error{
+        color: white;
+    }
 /*#container{
     width: 60%;
     height: 100%;
