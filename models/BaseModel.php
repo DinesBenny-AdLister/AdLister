@@ -110,7 +110,7 @@
         $stmt->bindValue(":$key", $value, PDO::PARAM_STR);
         $stmt->execute();
 
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
         $instance = null;
         if ($result)

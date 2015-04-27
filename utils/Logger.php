@@ -2,35 +2,36 @@
 
 	class Logger{
 
-		protected static $fileName;
+		public $fileName;
 
 		// constructor
 		public function __construct($prefix = "log", $suffix = "txt"){
-			static::$fileName = "../data/{$prefix}-".date("Y-m-d").".{$suffix}";
+			$this->fileName = "../data/{$prefix}-".date("Y-m-d").".{$suffix}";
 		}
 
 		// general logger
 		public static function log($message, $level){
+			$fileName = "../data/log-".date("Y-m-d").".txt";
 			$handle = fopen($fileName, 'a');
-			fwrite($handle, date("H:i:s")." ".$logLevel." ".$message."\n");
+			fwrite($handle, date("H:i:s")." ".$level." ".$message."\n");
 			fclose($handle);
 		}
 		// error logger
 		public static function error($message){
-			log($message, "error");
+			Logger::log($message, "error");
 		}
 
 		// info logger
 		public static function info($message){
-			log($message, "info");
+			Logger::log($message, "info");
 		}
 
 		public static function addAd($message){
-			log($message, "ad creation");
+			Logger::log($message, "ad creation");
 		}
 
 		public static function loginAttempt($message){
-			log($message, "login attempt");
+			Logger::log($message, "login attempt");
 		}
 	}
 

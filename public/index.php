@@ -1,7 +1,21 @@
 <?
-
 require_once '../bootstrap.php';
-
+if(isset($_POST['modalUsername'])){
+    if(isset($_POST['modalPassword'])){
+        require_once("../utils/Auth.php");
+        $login = Auth::logUser($_POST['modalUsername'], $_POST['modalPassword']);
+        if($login){
+            $invalid = true;
+        }
+    }
+    else{
+        $invalid = true;
+    }
+}
+elseif(isset($_POST['modalPassword'])){
+    $invalid = true;
+}
+    
     session_start();
     $sID = session_id();
 
@@ -9,9 +23,10 @@ require_once '../bootstrap.php';
         header("Location: ads.index.php");
     }
 
-    // var_dump($_POST);
-    // if(!empty($_POST)){
-    // }
+    if(!isset($invalid)){
+        $invalid = false;
+    }
+    extract([$_GET, $invalid]);
  ?>
 
 <!DOCTYPE html>
@@ -38,9 +53,9 @@ require_once '../bootstrap.php';
         </div>
 
         <div id="links">
-            <div id="login">
-                <a class="center" href="auth.login.php">Log In</a>
-            </div>
+                <div id="login">
+                    <a class="center" href="?l=t">Log In</a>
+                </div>
             <div id="preferences">
                 <a class="center" href="users.edit.php">Preferences</a>
             </div>
@@ -83,13 +98,13 @@ require_once '../bootstrap.php';
         </div>
     </div>
 
-    <!-- <div id="loginModal">
+    <div id="loginModal" <? if(!isset($_GET['l'])){echo "hidden";}?>>
         <div id="modalBackground">
             <div id="modalForm">
                 <form method="Post">
                     <label for="modalUsername">Username/Email</label>
                     <br>
-                    <input type="text" id="modalUsername" name="modalUsername">
+                    <input type="text" id="modalUsername" name="modalUsername" value="">
                     <br>
 
                     <label for="modalPassword">Password</label>
@@ -98,14 +113,29 @@ require_once '../bootstrap.php';
                     <br>
 
                     <button type="submit" id="submitButton">Submit</button>
+                    <br>
+                    <br>
+                    <? if($invalid): ?>
+                        <p class="error">Invalid Username/Password.</p>
+                    <? endif; ?>
                 </form>
-                <a id="closeModal" href="">X</a>
+                <a id="closeModal" href="/">X</a>
             </div>
 
         </div>
-    </div> -->
+    </div>
 
 	<? require_once("../views/partials/footer.php"); ?>
     <? require_once("../views/partials/jscriptFooter.php"); ?>
+    <script type="text/javascript">
+        $("#login").click(function(event){
+            console.log("Log In Clicked");
+            $("#loginModal").slideToggle();
+        });
+
+        $("#closeModal").click(function(event){
+            $("#loginModal").slideToggle();
+        });
+    </script>
 </body>
 </html>

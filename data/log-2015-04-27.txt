@@ -1,0 +1,98 @@
+07:46:08   attempted to log in
+07:46:08   log in failed
+07:47:15 info  attempted to log in
+07:47:15 login attempt  log in failed
+07:47:17 info  attempted to log in
+07:47:17 login attempt  log in failed
+07:47:18 info  attempted to log in
+07:47:18 login attempt  log in failed
+08:26:52 info  attempted to log in
+08:26:52 login attempt  log in failed
+08:27:21 info  attempted to log in
+08:27:21 login attempt  log in failed
+08:27:37 info  attempted to log in
+08:27:37 login attempt  log in failed
+08:27:50 info  attempted to log in
+08:27:50 login attempt  log in failed
+08:27:54 info  attempted to log in
+08:27:54 login attempt  log in failed
+08:29:16 info  attempted to log in
+08:29:16 login attempt  log in failed
+08:29:23 info  attempted to log in
+08:29:23 login attempt  log in failed
+08:29:30 info  attempted to log in
+08:29:30 login attempt  log in failed
+08:30:23 info RyDi attempted to log in
+08:30:23 login attempt RyDi log in failed
+08:30:47 info  attempted to log in
+08:30:47 login attempt  log in failed
+08:31:29 info MoneyBenny attempted to log in
+08:31:29 login attempt MoneyBenny log in failed
+08:34:25 info  attempted to log in
+08:34:25 login attempt  log in failed
+08:34:34 info MoneyBenny attempted to log in
+08:34:56 info MoneyBenny attempted to log in
+08:34:56 login attempt MoneyBenny log in failed
+08:36:04 info MoneyBenny attempted to log in
+08:36:04 login attempt MoneyBenny log in failed
+08:36:26 info MoneyBenny attempted to log in
+08:37:37 info MoneyBenny attempted to log in
+08:37:48 info MoneyBenny attempted to log in
+08:38:11 info MoneyBenny attempted to log in
+08:38:11 login attempt MoneyBenny log in failed
+08:40:07 info MoneyBenny attempted to log in
+08:40:07 login attempt MoneyBenny log in failed
+08:40:46 info MoneyBenny attempted to log in
+08:40:46 login attempt MoneyBenny log in failed
+08:41:28 info MoneyBenny attempted to log in
+08:41:28 login attempt MoneyBenny log in failed
+08:41:41 info MoneyBenny attempted to log in
+08:41:41 login attempt MoneyBenny log in failed
+08:43:17 info MoneyBenny attempted to log in
+08:43:17 login attempt MoneyBenny log in failed
+
+08:44:41 info MoneyBenny attempted to log in
+08:44:41 login attempt MoneyBenny log in failed
+
+08:50:24 info MoneyBenny attempted to log in
+08:50:24 login attempt MoneyBenny log in failed
+
+08:55:00 info MoneyBenny attempted to log in
+08:55:00 login attempt MoneyBenny log in failed
+
+08:55:34 info MoneyBenny attempted to log in
+08:55:34 login attempt MoneyBenny log in failed
+
+08:59:24 info MoneyBenny attempted to log in
+08:59:24 login attempt MoneyBenny log in failed
+
+09:00:00 info MoneyBenny attempted to log in
+09:00:00 login attempt MoneyBenny log in failed
+
+09:02:32 info  attempted to log in
+09:02:32 login attempt  log in failed
+
+09:02:35 info  attempted to log in
+09:02:35 login attempt  log in failed
+
+09:02:36 info  attempted to log in
+09:02:36 login attempt  log in failed
+
+09:02:39 info dgfhjk attempted to log in
+09:02:39 login attempt dgfhjk log in failed
+
+09:02:43 info asdf attempted to log in
+09:02:43 login attempt asdf log in failed
+
+09:02:49 info  attempted to log in
+09:02:49 login attempt  log in failed
+
+09:02:57 info fghjkl attempted to log in
+09:02:57 login attempt fghjkl log in failed
+
+09:03:21 info BennyMoney attempted to log in
+09:03:21 login attempt BennyMoney log in failed
+
+09:03:33 info MoneyBenny attempted to log in
+09:03:33 login attempt MoneyBenny succussfully logged in
+
