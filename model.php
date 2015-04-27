@@ -5,7 +5,6 @@ require_once 'parks_login.php';
 Class Model
 
 {
-
     protected static $dbc;
     protected static $table;
 

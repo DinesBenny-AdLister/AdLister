@@ -3,7 +3,7 @@ require_once('../bootstrap.php');
 
 	if(!empty($_GET)){
 		$id=Input::get('show');
-		$ad=Ad::search($key, $value);
+		// $ad=Ad::search($key, $value);
 	}
 	
 

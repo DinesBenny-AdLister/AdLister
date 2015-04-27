@@ -9,9 +9,9 @@ require_once '../bootstrap.php';
         header("Location: ads.index.php");
     }
 
-    var_dump($_POST);
-    if(!empty($_POST)){
-    }
+    // var_dump($_POST);
+    // if(!empty($_POST)){
+    // }
  ?>
 
 <!DOCTYPE html>

@@ -1,3 +1,20 @@
+<?php
+
+require_once('../bootstrap.php');
+
+// if (Ad::save('submit')){
+    
+//     Ad::save;
+
+// } else {
+    
+//     var_dump($_POST);
+// }
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,7 +78,7 @@
 
                         <br>
                         <br>
-	                    <button type="submit" class="pure-button pure-button-primary">Post</button>
+	                    <button name"submit" type="submit" class="pure-button pure-button-primary">Post</button>
 	                </fieldset>
 	            </form>
 		</div>
