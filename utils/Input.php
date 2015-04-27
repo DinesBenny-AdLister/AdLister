@@ -10,14 +10,14 @@ class Input
      */
     public static function has($key)
     {
-        
+
         if (isset($_REQUEST[$key]))
             {
                 return true;
             }
                 return false;
-    }  
-    
+    }
+
 
     /**
      * Get a requested value from either $_POST or $_GET
@@ -26,7 +26,7 @@ class Input
      * @param mixed $default default value to return if key not found
      * @return mixed value passed in request
      */
-    
+
     public static function get($key, $default = null)
     {
         if (isset($_REQUEST[$key]))
@@ -39,7 +39,7 @@ class Input
 
     public static function getString($key)
     {
-        
+
         $result = self::get($key);
 
         if (is_string($result) && !is_numeric($result) ){
@@ -59,7 +59,7 @@ class Input
 
     public static function getNumber($key)
     {
-        
+
         $result = trim(self::get($key));
 
         if(is_numeric($result)){

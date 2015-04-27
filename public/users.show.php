@@ -12,8 +12,8 @@
 		label{
 			text-decoration: underline;
 		}
+
 		#profPic{
-			
 			height: 200px;
 			width: 200px;
 			margin-top: 131px;
